@@ -1,0 +1,1 @@
+functionload_scripts(){if(!is_post_type_archive('concert')&&!is_post_type_archive('action'))return;wp_register_script('leaflet-js','http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js');wp_enqueue_script('leaflet-js');}add_action('wp_enqueue_scripts','load_scripts');

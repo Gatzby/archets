@@ -1,0 +1,1 @@
+functiongetMarkerList($post_type="concert"){$results=getPostWithLatLon($post_type);$array=array();foreach($resultsas$result){$array[]="varmarker_$result->ID=...";$array[]="varpopup_$result->ID =...”;$array[]="...";$array[]=“...”;}returnimplode(PHP_EOL,$array);}
